@@ -1,1 +1,1 @@
-# medical-paper
+# medical-pager
