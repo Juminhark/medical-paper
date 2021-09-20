@@ -5,8 +5,22 @@ import { SearchIcon } from '../assets';
 
 const ChannelSearch = () => {
 	const [query, setQuery] = useState('');
+	const [loading, setLoading] = useState(false);
+
+	const getChannels = async (text) => {
+		try {
+			//TODO: fetch channels
+		} catch (error) {
+			setQuery('');
+		}
+	};
+
 	const onSearch = (e) => {
 		e.preventDefault();
+
+		setLoading(true);
+		setQuery(e.target.value);
+		getChannels(e.target.value);
 	};
 
 	return (
