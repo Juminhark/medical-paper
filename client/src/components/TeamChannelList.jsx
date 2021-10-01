@@ -3,7 +3,16 @@ import React from 'react';
 import { AddChannel } from '../assets';
 
 // rafce
-const TeamChannelList = ({ children, error = false, loading, type }) => {
+const TeamChannelList = ({
+	children,
+	error = false,
+	loading,
+	type,
+	isCreating,
+	setIsCreating,
+	setCreateType,
+	setIsEditing,
+}) => {
 	if (error) {
 		return type === 'team' ? (
 			<div className="team-channel-list">
@@ -31,7 +40,13 @@ const TeamChannelList = ({ children, error = false, loading, type }) => {
 					{type === 'team' ? 'Channels' : 'Direct Messages'}
 				</p>
 				{/* Button - add channel */}
-				<AddChannel />
+				<AddChannel
+					isCreating={isCreating}
+					setIsCreating={setIsCreating}
+					setCreateType={setCreateType}
+					setIsEditing={setIsEditing}
+					type={type === 'team' ? 'team' : 'messaging'}
+				/>
 			</div>
 
 			{children}
