@@ -1,5 +1,6 @@
 # medical-pager
 
+- [site](https://zen-northcutt-ae2aa7.netlify.app/)
 - [Build and Deploy a Full Stack Realtime Chat Messaging App with Authentication & SMS Notifications - JavaScript Mastery
   ](https://www.youtube.com/watch?v=MJzbJQLGehs)
 
@@ -25,4 +26,17 @@
 > npm init -y
 > npm install bcrypt crypto dotenv express getstream stream-chat nodemon twilio
 > npm install cors
+```
+
+## [twilio](https://www.twilio.com/console/gate)
+
+## Deployment
+
+- [heroku](https://dashboard.heroku.com/)
+- [netlify](https://www.netlify.com/)
+
+```sh
+> npm run build
+
+// .env로 key를 숨겼기때문에 deploy 과정에서 key_value 기입필요
 ```

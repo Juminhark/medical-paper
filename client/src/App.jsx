@@ -10,7 +10,7 @@ import './App.css';
 
 const cookies = new Cookies();
 
-const apiKey = 'vfh63a2m3qj4';
+const apiKey = 'rq9rzy8m5kze';
 
 const authToken = cookies.get('token');
 

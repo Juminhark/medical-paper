@@ -28,7 +28,7 @@ const Auth = () => {
 
 		const { fullName, username, password, phoneNumber, avatarURL } = form;
 
-		const URL = 'http://localhost:4000/auth';
+		const URL = 'https://medical-pager-zillda.herokuapp.com';
 
 		const {
 			data: { token, userId, hashedPassword },
